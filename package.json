@@ -56,7 +56,7 @@
     "symfony:serve": "cross-env APP_ENV=dev symfony serve --dir=ServerApp --allow-http",
     "copy:serverapp": "npm run clean-dependencies:serverapp && cpr ServerApp/ dist",
     "dependencies:serverapp": "cd ServerApp && composer install",
-    "clean-dependencies:serverapp": "rimraf ServerApp/vendor && cd ServerApp && composer install",
+    "clean-dependencies:serverapp": "rimraf ServerApp/vendor && rimraf ServerApp/var && rimraf ServerApp/public/api/bundles && cd ServerApp && composer install",
     "cpr": "cpr",
     "rimraf": "rimraf"
   },
