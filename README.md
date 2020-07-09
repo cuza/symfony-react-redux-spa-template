@@ -1,5 +1,5 @@
 # Symfony React with Redux SPA Template
-This template is heavily inspired in [Microsoft SPA templates for ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/client-side/spa/react-with-redux). It's a React with Redux project with a Symfony project inside the [ServerApp](ServerApp) directory
+This template is heavily inspired in [Microsoft SPA templates for ASP.NET Core](https://github.com/dotnet/aspnetcore/tree/master/src/ProjectTemplates/Web.Spa.ProjectTemplates). It's a React with Redux project with a Symfony project inside the [ServerApp](ServerApp) directory
 
 ## Requirements
 This template assumes that you have installed the following tools and they are available in your $PATH:
