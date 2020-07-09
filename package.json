@@ -32,6 +32,7 @@
     "@types/react-router-dom": "5.1.0",
     "@types/reactstrap": "8.0.6",
     "@typescript-eslint/parser": "^2.5.0",
+    "cpr": "^3.0.1",
     "concurrently": "^5.2.0",
     "cross-env": "6.0.3",
     "eslint": "^6.5.1",
@@ -47,15 +48,16 @@
   "scripts": {
     "start": "cross-env PORT=8001 BROWSER=none react-scripts start",
     "build:react": "react-scripts build",
-    "build": "rimraf dist && npm run copy:serverapp && npm run build:react && cp -Rp build/ dist/public/ && rimraf build",
+    "build": "rimraf dist && npm run copy:serverapp && npm run build:react && cpr build/ dist/public/ && rimraf build",
     "test": "cross-env CI=true react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint": "eslint ./src/**/*.ts ./src/**/*.tsx",
     "serve": "concurrently \"npm run start\" \"npm run symfony:serve\" \"node start.js\"",
     "symfony:serve": "cross-env APP_ENV=dev symfony serve --dir=ServerApp --allow-http",
-    "copy:serverapp": "npm run clean-dependencies:serverapp && cp -r ServerApp/ dist && rm dist/public/index.php",
+    "copy:serverapp": "npm run clean-dependencies:serverapp && cpr ServerApp/ dist && rimraf dist/public/index.php",
     "dependencies:serverapp": "cd ServerApp && composer install",
     "clean-dependencies:serverapp": "rimraf ServerApp/vendor && cd ServerApp && composer install",
+    "cpr": "cpr",
     "rimraf": "rimraf"
   },
   "eslintConfig": {
