@@ -1,4 +1,4 @@
-# Symfony Angular SPA Template
+# Symfony React with Redux SPA Template
 This template is heavily inspired in [Microsoft SPA templates for ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/client-side/spa/react-with-redux). It's a React with Redux project with a Symfony project inside the [ServerApp](ServerApp) directory
 
 ## Requirements
