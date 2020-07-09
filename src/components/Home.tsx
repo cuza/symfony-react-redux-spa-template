@@ -16,7 +16,7 @@ const Home = () => (
       <li><strong>Development server integration</strong>. In development mode, the development server from <code>create-react-app</code> runs in the background automatically, so your client-side resources are dynamically built on demand and the page refreshes when you modify any file.</li>
       <li><strong>Efficient production builds</strong>. In production mode, development-time features are disabled, and your <code>npm run build</code> configuration produces minified, efficiently bundled JavaScript files.</li>
     </ul>
-    <p>The <code>ServerApp</code> subdirectory is a standard Symfony application based on the <code>symfony new</code> template. If you open a command prompt in that directory, you can run <code>symfony</code> commands such as <code>symfony console</code> or <code>composer install</code>.</p>
+    <p>The <code>ServerApp</code> subdirectory is a standard Symfony application based on the <code>symfony new</code> template. If you open a command prompt in that directory, you can run <code>symfony</code> commands such as <code>symfony console</code> or <code>symfony composer</code>.</p>
   </div>
 );
 
